@@ -1,0 +1,41 @@
+.rental-card {
+  position: relative;
+  text-align: left;
+  color: white;
+  margin: 1rem;
+}
+
+.rental-card:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.rental-card__img {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px;
+ 
+}
+
+
+
+.rental-card__title {
+  font-size: 18px;
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 5%;
+}

@@ -29,7 +29,6 @@ ReactDOM.render(
            </Route>
         </Switch>
         <Footer />
-        {/* </GlobalStyle> */}
      </Router>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import '../Rating/Rating.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faStar } from '@fortawesome/free-solid-svg-icons';
+import starSolid from '../../Assets/star-solid.png';
+import starEmpty from '../../Assets/star-empty.png';
 
 class Rating extends Component {
    constructor(props) {
@@ -18,29 +20,21 @@ class Rating extends Component {
             {range.map(
                (rangeEl) =>
                   rating >= rangeEl ? (
-                     <FontAwesomeIcon
-                        icon={faStar}
-                        key={rangeEl}
-                        style={{ color: '#FF6060' }}
-                     />
+                     <img src={starSolid} alt="rating" />
                   ) : (
-                     //   <i
-                     //      class="fa-solid fa-star"
-                     //      key={rangeEl}
-                     //      style={{ color: '#FF6060' }}
-                     //   ></i>
-                     <FontAwesomeIcon
-                        icon={faStar}
-                        key={rangeEl}
-                        style={{ color: '#E3E3E3' }}
-                     />
-                  )
+                     // <FontAwesomeIcon
+                     //    icon={faStar}
+                     //    key={rangeEl}
+                     //    style={{ color: '#FF6060' }}
+                     // />
 
-               //   <i
-               //      class="fa-regular fa-star"
-               //      key={rangeEl}
-               //      style={{ color: '#E3E3E3' }}
-               //   ></i>
+                     <img src={starEmpty} alt="rating" />
+                  )
+               // <FontAwesomeIcon
+               //    icon={faStar}
+               //    key={rangeEl}
+               //    style={{ color: '#E3E3E3' }}
+               // />
             )}
          </div>
       );

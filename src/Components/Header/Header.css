@@ -1,21 +1,21 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
 }
 
 .header__logo {
-    width: 60%;
+  width: 60%;
 }
 
 .header__nav {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .header__nav__item {
-    text-decoration: none;
-    color: #FF6060;
-    font-size: 24px;
-    font-weight: 500;
-    padding-left: 3rem;
+  text-decoration: none;
+  color: #ff6060;
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 3rem;
 }

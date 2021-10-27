@@ -1,25 +1,22 @@
-import {Component} from 'react'
-import Hero from '../../Components/Hero';
-import RentalList from '../../Components/RentalList';
-import backgroundhome from '../../Assets/backgroundhome.svg'
-
+import { Component } from "react";
+import Hero from "../../Components/Hero";
+import RentalList from "../../Components/RentalList";
+import backgroundHome from "../../Assets/background-home.png";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-
-    render() {
-    
-        return (
-            <div className="wrapper">
-               <Hero cover={backgroundhome} isTextVisible={true}/>
-               <RentalList/>
-           </div>
-        )
-    }
+  render() {
+    return (
+      <div className="wrapper">
+        <Hero cover={backgroundHome} isTextVisible={true} />
+        <RentalList />
+      </div>
+    );
+  }
 }
 
 // function Home() {
@@ -31,4 +28,4 @@ class Home extends Component {
 //    )
 // }
 
-export default Home
+export default Home;

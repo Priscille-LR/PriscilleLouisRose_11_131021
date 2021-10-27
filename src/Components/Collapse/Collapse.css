@@ -1,33 +1,33 @@
 .collapse {
-    font-family:'Montserrat', sans-serif;
-    font-size: 24px;
-    margin: 2rem;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 24px;
+   margin: 2rem 0;
+   width: 100%;
 }
 
 .collapse__title__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FF6060;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ff6060;
+   color: white;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
 }
 
 .collapse__title {
-    margin: 0;
+   margin: 0;
 }
 
 .collapse__button {
-    padding: 0 0.5rem;
-    border: none;
-    background: none;
-    color: white;
+   padding: 0 0.5rem;
+   border: none;
+   background: none;
+   color: white;
 }
 
 .collapse__text {
-    background-color: #F6F6F6;
-    color: #FF6060;
-    padding: 1rem;
-    
+   background-color: #f6f6f6;
+   color: #ff6060;
+   padding: 1rem;
 }

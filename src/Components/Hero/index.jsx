@@ -1,21 +1,22 @@
-import {Component} from 'react'
+import { Component } from "react";
 // import backgroundhome from '../../Assets/backgroundhome.svg'
-import './Hero.css'
+import "./Hero.css";
 
 class Hero extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-
-    render() {
-        return (
-            <div className="hero">
-                <img src={this.props.cover} alt='hero background' className='hero__img' />
-                <span className="hero__text">{this.props.isTextVisible ? "Chez vous, partout et ailleurs" : ''} </span> 
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="hero">
+        <img
+          src={this.props.cover}
+          alt="hero background"
+          className="hero__img"
+        />
+        <span className="hero__text">
+          {this.props.isTextVisible ? "Chez vous, partout et ailleurs" : ""}{" "}
+        </span>
+      </div>
+    );
+  }
 }
 
 // function Hero() {
@@ -27,4 +28,4 @@ class Hero extends Component {
 //     )
 // }
 
-export default Hero
+export default Hero;

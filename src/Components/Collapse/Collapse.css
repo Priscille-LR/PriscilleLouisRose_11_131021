@@ -11,7 +11,7 @@
    align-items: center;
    background-color: #ff6060;
    color: white;
-   padding: 0.5rem 1rem;
+   padding: 1rem;
    border-radius: 5px;
 }
 
@@ -30,4 +30,7 @@
    background-color: #f6f6f6;
    color: #ff6060;
    padding: 1rem;
+   list-style-type: none;
+   margin: 0;
+   padding: 2rem 1rem;
 }

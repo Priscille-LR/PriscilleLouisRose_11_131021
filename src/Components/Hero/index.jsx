@@ -1,22 +1,23 @@
-import { Component } from "react";
-// import backgroundhome from '../../Assets/backgroundhome.svg'
-import "./Hero.css";
+import { Component } from 'react';
+import './Hero.css';
 
 class Hero extends Component {
-  render() {
-    return (
-      <div className="hero">
-        <img
-          src={this.props.cover}
-          alt="hero background"
-          className="hero__img"
-        />
-        <span className="hero__text">
-          {this.props.isTextVisible ? "Chez vous, partout et ailleurs" : ""}{" "}
-        </span>
-      </div>
-    );
-  }
+   render() {
+      return (
+         <div className="hero">
+            <img
+               src={this.props.cover}
+               alt="hero background"
+               className="hero__img"
+            />
+            <span className="hero__text">
+               {this.props.isTextVisible
+                  ? 'Chez vous, partout et ailleurs'
+                  : ''}{' '}
+            </span>
+         </div>
+      );
+   }
 }
 
 // function Hero() {

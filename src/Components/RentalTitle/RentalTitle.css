@@ -11,3 +11,13 @@
    font-weight: 500;
    /* margin-bottom: 2rem; */
 }
+
+@media screen and (max-width: 767px) {
+   .rental__title {
+      font-size: 18px;
+   }
+
+   .rental__location {
+      font-size: 14px;
+   }
+}

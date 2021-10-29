@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Hero from '../../Components/Hero';
 import backgroundAbout from '../../Assets/background-about.png';
 import Collapse from '../../Components/Collapse';
+import '../About/About.css';
 
 class About extends Component {
    render() {
@@ -27,11 +28,13 @@ class About extends Component {
       return (
          <div className="wrapper">
             <Hero cover={backgroundAbout} isTextVisible={false} />
-            {about.map(({ title, text }) => (
-               <div key={title}>
-                  <Collapse title={title} text={text} />
-               </div>
-            ))}
+            <div className="collapse-wrapper">
+               {about.map(({ title, text }) => (
+                  <div key={title}>
+                     <Collapse title={title} text={text} />
+                  </div>
+               ))}
+            </div>
          </div>
       );
    }

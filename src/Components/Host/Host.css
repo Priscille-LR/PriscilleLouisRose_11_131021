@@ -19,3 +19,22 @@
    height: 64px;
    width: 64px;
 }
+
+@media screen and (max-width: 767px) {
+   .host {
+      display: flex;
+      justify-self: flex-end;
+      margin: 0;
+   }
+
+   .host__name {
+      font-size: 12px;
+      margin-right: 1rem;
+      width: 80px;
+   }
+
+   .host__picture {
+      height: 32px;
+      width: 32px;
+   }
+}

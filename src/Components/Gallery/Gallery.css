@@ -46,3 +46,22 @@
 .button-next {
    right: 20px;
 }
+
+@media screen and (max-width: 767px) {
+   .gallery-wrapper {
+      height: 250px;
+   }
+
+   .picture {
+      height: 250px;
+   }
+
+   .gallery__item.active {
+      height: 250px;
+   }
+
+   .button-previous,
+   .button-next {
+      height: 20px;
+   }
+}

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import '../Host/Host.css';
 
 class Host extends Component {

@@ -1,17 +1,17 @@
-import { Component } from "react";
-import PropTypes from "prop-types";
-import "../RentalCard/RentalCard.css";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import '../RentalCard/RentalCard.css';
 
 class RentalCard extends Component {
-  render() {
-    const { id, cover, title } = this.props;
-    return (
-      <article key={id} className="rental-card">
-        <img className="rental-card__img" alt="rental" src={cover} />
-        <span className="rental-card__title">{title}</span>
-      </article>
-    );
-  }
+   render() {
+      const { id, cover, title } = this.props;
+      return (
+         <article key={id} className="rental-card">
+            <img className="rental-card__img" alt="rental" src={cover} />
+            <span className="rental-card__title">{title}</span>
+         </article>
+      );
+   }
 }
 
 // function RentalCard({ id, title, cover }) {
@@ -27,7 +27,7 @@ class RentalCard extends Component {
 export default RentalCard;
 
 RentalCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  cover: PropTypes.string.isRequired,
+   id: PropTypes.string.isRequired,
+   title: PropTypes.string.isRequired,
+   cover: PropTypes.string.isRequired,
 };

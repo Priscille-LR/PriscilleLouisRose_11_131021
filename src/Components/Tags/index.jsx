@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import '../Tags/Tags.css';
 
 class Tags extends Component {

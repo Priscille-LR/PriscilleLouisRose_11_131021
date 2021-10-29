@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import '../Collapse/Collapse.css';
 
 class Collapse extends Component {
@@ -20,6 +20,7 @@ class Collapse extends Component {
 
    render() {
       const { title, text } = this.props;
+      const { visibility } = this.state;
 
       return (
          <div className="collapse">
@@ -37,7 +38,7 @@ class Collapse extends Component {
                </button>
             </div>
 
-            {this.state.visibility &&
+            {visibility &&
                (Array.isArray(text) ? (
                   <ul className="collapse__text">
                      {text.map((element, index) => (

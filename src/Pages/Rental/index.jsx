@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import Carousel from '../../Components/Carousel';
+import React, { Component } from 'react';
+import Gallery from '../../Components/Gallery';
 import RentalTitle from '../../Components/RentalTitle';
 import Collapse from '../../Components/Collapse';
 import Rating from '../../Components/Rating';
@@ -43,7 +43,7 @@ class Rental extends Component {
 
       return (
          <div>
-            <Carousel picture={rental.pictures[0]} />
+            <Gallery pictures={rental.pictures} />
             <div className="rental-presentation">
                <div className="title-tags">
                   <RentalTitle

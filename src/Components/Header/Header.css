@@ -21,13 +21,17 @@
    padding-left: 3rem;
 }
 
+.header__nav__item:active {
+   text-decoration: underline;
+}
+
 @media screen and (max-width: 767px) {
    .header__logo {
       width: 50%;
    }
 
    .header__nav__item {
-      font-size: 18px;
+      font-size: 13px;
       padding-left: 1rem;
       text-transform: uppercase;
    }

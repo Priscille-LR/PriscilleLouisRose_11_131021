@@ -17,24 +17,12 @@ class Rating extends Component {
 
       return (
          <div className="rating">
-            {range.map(
-               (rangeEl) =>
-                  rating >= rangeEl ? (
-                     <img src={starSolid} alt="rating" />
-                  ) : (
-                     // <FontAwesomeIcon
-                     //    icon={faStar}
-                     //    key={rangeEl}
-                     //    style={{ color: '#FF6060' }}
-                     // />
-
-                     <img src={starEmpty} alt="rating" />
-                  )
-               // <FontAwesomeIcon
-               //    icon={faStar}
-               //    key={rangeEl}
-               //    style={{ color: '#E3E3E3' }}
-               // />
+            {range.map((rangeEl) =>
+               rating >= rangeEl ? (
+                  <img key={rangeEl} src={starSolid} alt="rating" />
+               ) : (
+                  <img key={rangeEl} src={starEmpty} alt="rating" />
+               )
             )}
          </div>
       );

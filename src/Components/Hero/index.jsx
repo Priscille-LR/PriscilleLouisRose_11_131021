@@ -10,11 +10,11 @@ class Hero extends Component {
                alt="hero background"
                className="hero__img"
             />
-            <span className="hero__text">
-               {this.props.isTextVisible
-                  ? 'Chez vous, partout et ailleurs'
-                  : ''}{' '}
-            </span>
+            {this.props.isTextVisible ? (
+               <p className="hero__text">Chez vous, partout et ailleurs</p>
+            ) : (
+               ''
+            )}
          </div>
       );
    }

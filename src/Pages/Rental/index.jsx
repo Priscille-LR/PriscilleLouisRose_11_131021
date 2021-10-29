@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import Gallery from '../../Components/Gallery';
 import RentalTitle from '../../Components/RentalTitle';
 import Collapse from '../../Components/Collapse';
@@ -36,10 +37,14 @@ class Rental extends Component {
       const { rentalData, id } = this.state;
 
       if (rentalData.length === 0) {
-         return <div></div>;
+         return null;
       }
 
       const rental = rentalData.find((rental) => rental.id === id);
+
+      if (!rental) {
+         return <Redirect to="/page-not-found" />;
+      }
 
       return (
          <div>

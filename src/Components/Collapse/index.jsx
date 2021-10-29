@@ -24,12 +24,12 @@ class Collapse extends Component {
 
       return (
          <div className="collapse">
-            <div className="collapse__title__wrapper">
+            <div
+               onClick={this.handleToggleVisibility}
+               className="collapse__title__wrapper"
+            >
                <p className="collapse__title">{title}</p>
-               <button
-                  className="collapse__button"
-                  onClick={this.handleToggleVisibility}
-               >
+               <button className="collapse__button">
                   {this.state.visibility ? (
                      <i className="fas fa-chevron-up fa-lg"></i>
                   ) : (

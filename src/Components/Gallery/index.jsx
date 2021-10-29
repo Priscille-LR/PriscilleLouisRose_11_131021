@@ -26,7 +26,7 @@ class Gallery extends Component {
             {pictures.length > 1 ? (
                <img
                   src={chevronLeft}
-                  alt="show previous picture"
+                  alt="show previous"
                   className="button-previous"
                   onClick={this.showPreviousPicture}
                />
@@ -35,7 +35,7 @@ class Gallery extends Component {
             {pictures.length > 1 ? (
                <img
                   src={chevronRight}
-                  alt="show next picture"
+                  alt="show next"
                   className="button-next"
                   onClick={this.showNextPicture}
                />

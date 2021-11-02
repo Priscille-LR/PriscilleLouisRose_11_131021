@@ -30,11 +30,20 @@ class Collapse extends Component {
             >
                <p className="collapse__title">{title}</p>
                <button className="collapse__button">
-                  {this.state.visibility ? (
-                     <i className="fas fa-chevron-up fa-lg"></i>
+                  {/* <i className="fas fa-chevron-down fa-lg"></i> */}
+                  <i
+                     className={
+                        this.state.visibility
+                           ? 'fas fa-chevron-down fa-lg expanded'
+                           : 'fas fa-chevron-down fa-lg closed'
+                     }
+                  ></i>
+
+                  {/* {this.state.visibility ? (
+                     <i className="fas fa-chevron-down fa-lg"></i>
                   ) : (
                      <i className="fas fa-chevron-down fa-lg"></i>
-                  )}
+                  )} */}
                </button>
             </div>
 

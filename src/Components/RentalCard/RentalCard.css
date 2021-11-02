@@ -3,6 +3,8 @@
    text-align: left;
    color: white;
    height: 340px;
+   overflow: hidden;
+   border-radius: 20px;
 }
 
 .rental-card:after {
@@ -17,16 +19,21 @@
       rgba(255, 255, 255, 0.2),
       rgba(0, 0, 0, 0.5)
    );
-   background-size: cover;
-   border-radius: 20px;
+   /* background-size: cover;
+   border-radius: 20px; */
 }
 
 .rental-card__img {
    position: relative;
+   background-size: cover;
    width: 100%;
    height: 100%;
-   border-radius: 20px;
    object-fit: cover;
+}
+
+.rental-card:hover img {
+   transform: scale(1.1);
+   transition: all 300ms ease-in-out;
 }
 
 .rental-card__title {

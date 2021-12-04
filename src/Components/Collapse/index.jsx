@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Collapse/Collapse.css';
+import './Collapse.css';
 
 class Collapse extends Component {
    constructor(props) {
@@ -30,7 +30,6 @@ class Collapse extends Component {
             >
                <p className="collapse__title">{title}</p>
                <button className="collapse__button">
-                  {/* <i className="fas fa-chevron-down fa-lg"></i> */}
                   <i
                      className={
                         this.state.visibility
@@ -38,12 +37,6 @@ class Collapse extends Component {
                            : 'fas fa-chevron-down fa-lg closed'
                      }
                   ></i>
-
-                  {/* {this.state.visibility ? (
-                     <i className="fas fa-chevron-down fa-lg"></i>
-                  ) : (
-                     <i className="fas fa-chevron-down fa-lg"></i>
-                  )} */}
                </button>
             </div>
 
@@ -61,14 +54,5 @@ class Collapse extends Component {
       );
    }
 }
-
-// function Collapse({title, text}) {
-//     return (
-//         <div className="collapse-wrapper">
-//             <div className="collapse__title">{title}</div>
-//             <div className="collapse__text">{text}</div>
-//         </div>
-//     )
-// }
 
 export default Collapse;

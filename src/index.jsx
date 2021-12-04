@@ -13,25 +13,27 @@ import './index.css';
 ReactDOM.render(
    <React.StrictMode>
       <Router>
-         <Header />
-         <Switch>
-            <Route exact path="/">
-               <Home />
-            </Route>
-            <Route
-               path="/location/:id"
-               render={(props) => <Rental {...props} />}
-            />
-            <Route path="/a-propos">
-               <About />
-            </Route>
-            <Route path="/page-not-found">
-               <Error />
-            </Route>
-            <Route>
-               <Redirect to="/page-not-found" />
-            </Route>
-         </Switch>
+         <div className="app-wrapper">
+            <Header />
+            <Switch>
+               <Route exact path="/">
+                  <Home />
+               </Route>
+               <Route
+                  path="/location/:id"
+                  render={(props) => <Rental {...props} />}
+               />
+               <Route path="/a-propos">
+                  <About />
+               </Route>
+               <Route path="/page-not-found">
+                  <Error />
+               </Route>
+               <Route>
+                  <Redirect to="/page-not-found" />
+               </Route>
+            </Switch>
+         </div>
          <Footer />
       </Router>
    </React.StrictMode>,

@@ -47,7 +47,7 @@ class Rental extends Component {
       }
 
       return (
-         <div>
+         <div className="wrapper">
             <Gallery pictures={rental.pictures} />
             <div className="rental-presentation">
                <div className="title-tags">

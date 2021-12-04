@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../Gallery/Gallery.css';
 import chevronLeft from '../../Assets/chevron-left.png';
 import chevronRight from '../../Assets/chevron-right.png';
+import './Gallery.css';
 
 class Gallery extends Component {
    constructor(props) {
@@ -59,40 +59,6 @@ class Gallery extends Component {
             })}
          </div>
       );
-
-      // return (
-      //    <div className="gallery-wrapper">
-      //       {pictures.length > 1 ? (
-      //          <button onClick={this.showPreviousPicture}>
-      //             <img
-      //                src={chevronLeft}
-      //                alt="show previous picture"
-      //                className="button-previous"
-      //             />
-      //          </button>
-      //       ) : null}
-
-      //       <img
-      //          src={pictures[pictureIndex]}
-      //          alt="rental"
-      //          className={
-      //             pictureIndex === currentIndex
-      //                ? 'gallery__item active'
-      //                : 'gallery__item'
-      //          }
-      //       />
-
-      //       {pictures.length > 1 ? (
-      //          <button onClick={this.showNextPicture}>
-      //             <img
-      //                src={chevronRight}
-      //                alt="show next picture"
-      //                className="button-next"
-      //             />
-      //          </button>
-      //       ) : null}
-      //    </div>
-      // );
    }
 
    showPreviousPicture() {

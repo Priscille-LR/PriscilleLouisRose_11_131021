@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../RentalCard/RentalCard.css';
+import './RentalCard.css';
 
 class RentalCard extends Component {
    render() {
@@ -13,16 +13,6 @@ class RentalCard extends Component {
       );
    }
 }
-
-// function RentalCard({ id, title, cover }) {
-
-//     return (
-//         <article key={id} className="rental-card">
-//            <img className="rental-card__img" alt="rental" src={cover}/>
-//            <span className="rental-card__title">{title}</span>
-//         </article>
-//     )
-// }
 
 export default RentalCard;
 

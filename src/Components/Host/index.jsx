@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import '../Host/Host.css';
+import './Host.css';
 
 class Host extends Component {
-   constructor(props) {
-      super(props);
-      this.state = {};
-   }
-
    render() {
       const { name, picture } = this.props;
       return (

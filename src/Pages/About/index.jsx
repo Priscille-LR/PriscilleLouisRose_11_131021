@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Hero from '../../Components/Hero';
 import backgroundAbout from '../../Assets/background-about.png';
 import Collapse from '../../Components/Collapse';
-import '../About/About.css';
+import './About.css';
 
 class About extends Component {
    render() {

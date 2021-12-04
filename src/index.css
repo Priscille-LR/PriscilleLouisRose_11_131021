@@ -1,6 +1,8 @@
 body {
-   margin: 2rem auto;
-   max-width: 1400px;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0 auto;
    font-family: 'Montserrat', sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
@@ -15,12 +17,21 @@ h2 {
    margin: 0;
 }
 
-#root {
+.app-wrapper {
+   margin: 0 auto;
+   max-width: 1400px;
+}
+
+.wrapper {
    margin: 0 3rem;
 }
 
+/* #root {
+   margin: 0 3rem;
+} */
+
 @media screen and (max-width: 767px) {
-   #root {
+   .wrapper {
       margin: 0 1rem;
    }
 }

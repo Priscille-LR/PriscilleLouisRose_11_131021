@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import {rentals} from '../../Data/Rentals'
 import RentalCard from '../RentalCard/index.jsx';
-import '../RentalList/RentalList.css';
+import './RentalList.css';
 
 const rentals = 'http://localhost:3000/data.json';
 
@@ -15,8 +14,6 @@ class RentalList extends Component {
    }
 
    componentDidMount() {
-      // const { id } = this.props.match.params;
-
       fetch(rentals)
          .then((response) => response.json())
          .then((data) => {
@@ -42,20 +39,5 @@ class RentalList extends Component {
       );
    }
 }
-
-// function RentalList() {
-//     return (
-//         <div className="rental-list">
-//             {rentals.map(({ id, title, cover }) =>
-//                 <div key={id}>
-//                     <RentalCard
-//                     id={id}
-//                     title={title}
-//                     cover={cover}/>
-//                 </div>
-//             )}
-//         </div>
-//     )
-// }
 
 export default RentalList;

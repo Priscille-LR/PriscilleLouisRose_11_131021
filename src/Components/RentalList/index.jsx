@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import RentalCard from '../RentalCard/index.jsx';
 import './RentalList.css';
 
-const rentals = 'http://localhost:3000/data.json';
+const rentals = '/data.json';
 
 class RentalList extends Component {
    constructor(props) {

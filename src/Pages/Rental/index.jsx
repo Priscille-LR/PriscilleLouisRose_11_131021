@@ -8,7 +8,7 @@ import Tags from '../../Components/Tags';
 import Host from '../../Components/Host';
 import '../Rental/Rental.css';
 
-const rentals = 'http://localhost:3000/data.json';
+const rentals = '/data.json';
 
 class Rental extends Component {
    constructor(props) {

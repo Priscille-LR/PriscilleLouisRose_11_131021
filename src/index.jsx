@@ -20,10 +20,11 @@ ReactDOM.render(
                   <Home />
                </Route>
                <Route
+                  exact
                   path="/location/:id"
                   render={(props) => <Rental {...props} />}
                />
-               <Route path="/a-propos">
+               <Route exact path="/a-propos">
                   <About />
                </Route>
                <Route path="/page-not-found">
